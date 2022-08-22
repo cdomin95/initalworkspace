@@ -157,11 +157,35 @@ footer p {
   }
 }
 
+#title{
+  font-weight: 600;
+  margin-top: 55px;
+  font-size: 2rem;
+}
+
 .signin {
   width: 100%;
   max-width: 330px;
   padding: 15px;
   margin: auto;
+  text-align: center;
+}
+
+.info {
+width: 100%;
+margin-top: 7px;
+margin-bottom: 3px;
+padding: 7px 7px;
+}
+
+#button{
+  margin-top: 30px;
+  padding: 10px 15px;
+}
+
+label{
+  font-weight: 500;
+  margin-top: 10px;
 }
 
 #spinner-wrapper {
