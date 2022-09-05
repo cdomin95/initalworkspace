@@ -137,7 +137,6 @@ document.addEventListener("DOMContentLoaded", function(e){
         else{
             maxCount = undefined;
         }
-
         showCategoriesList();
     });
 });

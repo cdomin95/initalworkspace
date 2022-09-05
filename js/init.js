@@ -6,7 +6,7 @@ const PRODUCT_INFO_COMMENTS_URL = "https://japceibal.github.io/emercado-api/prod
 const CART_INFO_URL = "https://japceibal.github.io/emercado-api/user_cart/";
 const CART_BUY_URL = "https://japceibal.github.io/emercado-api/cart/buy.json";
 const EXT_TYPE = ".json";
-const AUTOS_URL = "https://japceibal.github.io/emercado-api/cats_products/101.json";
+
 
 let showSpinner = function(){
   document.getElementById("spinner-wrapper").style.display = "block";
@@ -40,3 +40,14 @@ let getJSONData = function(url){
         return result;
     });
 }
+
+/* Declaro una variable para guardar en Local Storage el valor del input email */
+let email_account = localStorage.getItem("email");
+
+/* Añado un escuchador para que cargue completamente el contenido del DOM */
+document.addEventListener("DOMContentLoaded", function() {
+
+/* A traves del DOM inyecto por medio del innerHTML la informacion designada ya declarada en la variable anterior */
+document.getElementsByClassName("nav-item")[3].innerHTML += `<a class="nav-link">${email_account}</a>` 
+  
+});

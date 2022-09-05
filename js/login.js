@@ -45,7 +45,8 @@ document.addEventListener("DOMContentLoaded", function() {
             pass_input.classList.remove("is-invalid");
             email_input.classList.add("is-valid");
             pass_input.classList.add("is-valid");
-            window.location.replace("index.html");
+            window.location.replace("main.html");
+            localStorage.setItem("email",email_input.value);
         }
     }); 
 });
